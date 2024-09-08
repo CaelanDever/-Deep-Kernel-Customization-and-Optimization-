@@ -211,7 +211,9 @@ I also would have reviewed /var/log/messages or /var/log/syslog for additional i
 
 # Conclusion
 
-By following these detailed steps, I successfully customized, compiled, and installed a Linux kernel tailored to my system's needs. I documented the customization process and observed performance improvements through kernel optimization. This project demonstrated my understanding of kernel configuration, compilation, and optimization concepts. Additionally, I explored advanced kernel tuning parameters to further enhance performance. If any issues arise or further assistance is needed, I am prepared to troubleshoot and refine the kernel configuration as necessary.
+By following these detailed steps, I successfully customized, compiled, and installed a Linux kernel tailored to my system's needs. I documented the customization process and observed performance improvements through kernel optimization. This project demonstrated my understanding of kernel configuration, compilation, and optimization concepts. 
+
+Additionally, I explored advanced kernel tuning parameters to further enhance performance. If any issues arise or further assistance is needed, I am prepared to troubleshoot and refine the kernel configuration as necessary.
 
 
 
