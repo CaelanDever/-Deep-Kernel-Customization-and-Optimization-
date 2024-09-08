@@ -12,6 +12,8 @@ I visited kernel.org to find the latest stable kernel release. For this example,
 
 curl -O https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.10.8.tar.xz
 
+<img width="447" alt="q1 1Official" src="https://github.com/user-attachments/assets/1ecea3ed-f919-4ecf-9ba7-dfa70d7d061c">
+
 # 3. Extracting the Downloaded Archive
 After downloading the kernel source code, I extracted the archive:
 
@@ -34,13 +36,17 @@ make oldconfig
 
 This command prompted me to confirm or adjust new configuration options introduced in the new kernel version. I pressed Enter to accept the default options where unsure.
 
-# 7. Exploring and Customizing Kernel Configuration Options
-With the default configuration in place, I used the kernel configuration utility to customize settings based on my system's requirements. I had the option to use different interfaces:
+<img width="456" alt="p1 2" src="https://github.com/user-attachments/assets/1d8abc77-9d01-4474-986b-71fc0ffad468">
 
-a. Text-Based Interface (menuconfig)
+
+# 7. Exploring and Customizing Kernel Configuration Options
+With the default configuration in place, I used the kernel configuration utility to customize settings based on my system's requirements.
+
 To start the text-based configuration utility, I used:
 
 make menuconfig
+
+<img width="916" alt="p1 3" src="https://github.com/user-attachments/assets/88ae0657-14f6-4966-8076-22cfe64bbe84">
 
 # Detailed Explanation of Custom Kernel Configuration Choices
 
@@ -55,6 +61,9 @@ This modern file system offers advanced features such as snapshots, checksumming
 XFS:
 
 Known for its high performance and scalability, XFS is an excellent choice for systems dealing with large files or heavy I/O operations. By enabling XFS, I ensure that my system can handle large volumes of data efficiently.
+
+<img width="426" alt="p1 4" src="https://github.com/user-attachments/assets/5d50836c-a8e1-454a-8d5c-1f2f76164b41">
+
 
 Both file systems provide different advantages, and enabling them ensures compatibility with a wide range of storage solutions and use cases on my system.
 
@@ -92,6 +101,8 @@ These adjustments are aimed at leveraging Intel-specific features for better per
    
 I enabled CPU frequency scaling and ensured ACPI support under Power Management and ACPI Options:
 
+<img width="432" alt="p1 5" src="https://github.com/user-attachments/assets/18310b48-b27f-42c2-baf1-3346c1e07be9">
+
 CPU Frequency Scaling: 
 
 This feature allows the CPU to adjust its operating frequency based on current workload demands. By enabling CPU frequency scaling, I can reduce power consumption and heat generation during periods of low activity, which is beneficial for extending hardware lifespan and improving energy efficiency.
@@ -105,6 +116,9 @@ These settings help in balancing performance and power efficiency, which is cruc
 5. Security Features
    
 I enabled SELinux and AppArmor under Security Options to enhance system security:
+
+<img width="440" alt="p1 6" src="https://github.com/user-attachments/assets/37293079-880f-4e51-ba99-19203995b858">
+
 
 SELinux:
 
@@ -142,6 +156,9 @@ Through these detailed customization steps, I have tailored the kernel configura
 # 8. Saving the Configuration
 After making the necessary adjustments, I saved the configuration:
 
+<img width="434" alt="p1 7" src="https://github.com/user-attachments/assets/e0ba2327-2088-4e70-bb9b-1aadf98924b8">
+
+
 In menuconfig, I pressed Save and confirmed saving to .config.
 
 # 9. Compiling the Customized Kernel
@@ -149,6 +166,9 @@ To compile the customized kernel, I ensured I was in the kernel source directory
 
 cd /path/to/linux-6.10.8
 make -j $(nproc)
+
+<img width="349" alt="p1 8" src="https://github.com/user-attachments/assets/59ecdb26-194c-4ebe-8e20-a1ef62316de4">
+
 
 Using $(nproc) allowed the compilation process to utilize all available CPU cores, speeding up the process. I also compiled the kernel modules:
 
