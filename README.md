@@ -190,6 +190,9 @@ For GRUB 2:
 
 sudo grub2-mkconfig -o /boot/grub2/grub.cfg
 
+<img width="446" alt="p1 9" src="https://github.com/user-attachments/assets/abfa6b42-7a8b-4164-a0e5-bbb51287ba3c">
+
+
 # 12. Rebooting and Testing
 I rebooted the system:
 
